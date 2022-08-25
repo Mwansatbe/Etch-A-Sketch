@@ -6,7 +6,7 @@ let num =1;
 for(let i =0; i<(rows * columns); i++){
     const gridItem= document.createElement("div");
     gridItem.classList.add("grid-item");
-    gridItem.innerText=num+i;
+    gridItem.innerText='';
     console.log(gridItem)
     container.appendChild(gridItem);
 

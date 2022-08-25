@@ -11,10 +11,33 @@ html{
 
 body{
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  min-height: 100vh;
+  overflow: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+   background-color: rgb(30, 30, 255);
+}
+.header{
   display: flex;
   justify-content: center;
-}
-body .header{
 color: green;
-margin: 20px;
+margin: 20px
+}
+
+.grid-container{
+  width: 960px;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows:repeat(16, 1fr) ;
+  margin-bottom: 20px;
+  background-color: white;
+   border: 2px solid gray;
+
+}
+.grid-item{
+ 
+  padding: 10px;
+  text-align: center;
 }
