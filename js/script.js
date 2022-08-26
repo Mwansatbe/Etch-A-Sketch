@@ -36,5 +36,10 @@ function getUserInput(){
        makeGrid(16,16)
    }
 }
-
-getUserInput();
+        const btn=document.querySelector(".btn");
+        btn.addEventListener("click", ()=>{
+            document.querySelectorAll(".grid-item").forEach(e=>e.remove());
+            getUserInput();
+            makeGrid(value1,value1);
+            
+})
