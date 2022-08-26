@@ -20,3 +20,21 @@ for(let i =0; i<(rows * columns); i++){
 }
 }
 makeGrid(16,16)
+
+let value1='';
+function getUserInput(){
+   value1=parseInt(prompt("Enter number of rows between 1 to 99 inclusive"));
+   if((value1!=Number(value1))){
+       value1=null;
+       makeGrid(16,16)
+
+       alert("Please enter a valid number");
+   }
+   if(value1>=100){
+       alert("Please enter valid number");
+       value1=null;
+       makeGrid(16,16)
+   }
+}
+
+getUserInput();
